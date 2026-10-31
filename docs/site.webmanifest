@@ -1,0 +1,95 @@
+{
+  "name": "UX Scale Labs",
+  "short_name": "UX Scales",
+  "description": "Standardised UX questionnaires with scoring, benchmarks and dataset analysis.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "en",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "background_color": "#f7f7f4",
+  "theme_color": "#3d4bd8",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "System Usability Scale",
+      "short_name": "SUS",
+      "url": "/sus/",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "User Experience Questionnaire",
+      "short_name": "UEQ",
+      "url": "/ueq/",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "NASA Task Load Index (Raw TLX)",
+      "short_name": "NASA-TLX",
+      "url": "/nasa-tlx/",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Net Promoter Score",
+      "short_name": "NPS",
+      "url": "/nps/",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

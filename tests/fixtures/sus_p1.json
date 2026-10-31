@@ -1,0 +1,50 @@
+{
+  "questionnaire": {
+    "id": "sus",
+    "abbr": "SUS",
+    "name": "System Usability Scale",
+    "references": [
+      "Brooke, J. (1996). SUS: A \"quick and dirty\" usability scale. In P. W. Jordan, B. Thomas, B. A. Weerdmeester & I. L. McClelland (Eds.), Usability Evaluation in Industry (pp. 189–194). Taylor & Francis.",
+      "Sauro, J., & Lewis, J. R. (2016). Quantifying the User Experience: Practical Statistics for User Research (2nd ed.). Morgan Kaufmann.",
+      "Bangor, A., Kortum, P. T., & Miller, J. T. (2008). An empirical evaluation of the System Usability Scale. International Journal of Human–Computer Interaction, 24(6), 574–594."
+    ]
+  },
+  "product": "Checkout v2",
+  "participant": "P1",
+  "date": "2026-10-29T08:14:07.961Z",
+  "score": {
+    "label": "SUS score",
+    "value": 50,
+    "min": 0,
+    "max": 100,
+    "band": "Grade F"
+  },
+  "facts": [
+    {
+      "label": "Percentile",
+      "value": "0–14"
+    },
+    {
+      "label": "Acceptability",
+      "value": "Marginal"
+    },
+    {
+      "label": "vs. average (68)",
+      "value": "-18"
+    }
+  ],
+  "subscales": [],
+  "answers": {
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 5,
+    "5": 1,
+    "6": 2,
+    "7": 3,
+    "8": 4,
+    "9": 5,
+    "10": 1
+  },
+  "generator": "uxscalelabs.online"
+}

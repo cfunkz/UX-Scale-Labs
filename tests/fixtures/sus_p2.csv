@@ -1,0 +1,23 @@
+questionnaire,SUS – System Usability Scale
+product,Checkout v2
+participant,P2
+date,2026-10-29T08:14:08.604Z
+
+metric,value
+SUS score,50.0
+band,Grade F
+Percentile,0–14
+Acceptability,Marginal
+vs. average (68),-18
+
+item,text,response,reversed,Contribution (0–4)
+Q1,I think that I would like to use this system frequently.,3,no,2
+Q2,I found the system unnecessarily complex.,4,yes,1
+Q3,I thought the system was easy to use.,5,no,4
+Q4,I think that I would need the support of a technical person to be able to use this system.,1,yes,4
+Q5,I found the various functions in this system were well integrated.,2,no,1
+Q6,I thought there was too much inconsistency in this system.,3,yes,2
+Q7,I would imagine that most people would learn to use this system very quickly.,4,no,3
+Q8,I found the system very cumbersome to use.,5,yes,0
+Q9,I felt very confident using the system.,1,no,0
+Q10,I needed to learn a lot of things before I could get going with this system.,2,yes,3

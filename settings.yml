@@ -1,0 +1,27 @@
+# Site settings. Change a value, then run `npm run build`.
+# Leave a value empty to turn that feature off.
+
+# Name shown in the header, page titles and footer
+site_name: UX Scale Labs
+# Shorter name used when the site is added to a phone's home screen
+short_name: UX Scales
+# Full address of the site, no trailing slash. Also used to write docs/CNAME
+site_url: https://uxscalelabs.online
+
+# Links in the header and footer
+github_repo: https://github.com/cfunkz/UX-Scale-Labs
+kofi_url: https://ko-fi.com/cfunkz81112
+
+# Path to your own logo as an SVG, e.g. brand/logo.svg. Empty uses the built-in logo.
+# Run `npm run icons` after changing it to remake the PNG icons and social images.
+logo:
+
+# Google AdSense publisher ID (ca-pub-...). Empty means no ads and no ads.txt
+adsense_client: ca-pub-3508838801072350
+# Google Analytics 4 ID (G-...). Empty means no analytics
+ga_id: G-70N1DKM651
+
+# Shown on the privacy page. Empty points people to GitHub issues instead
+contact_email:
+# Date shown on the privacy page
+privacy_updated: 29 October 2026

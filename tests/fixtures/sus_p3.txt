@@ -1,0 +1,39 @@
+UX SCALE LABS · RESULTS
+────────────────────────────────────────────────────────────────
+SUS – System Usability Scale
+Checkout v2 · Participant P3
+SUS score: 50.0 (range 0–100) · Grade F
+Percentile: 0–14
+Acceptability: Marginal
+vs. average (68): -18
+
+This score is below the average SUS of 68 and earns a F on the Sauro–Lewis curved grading scale, better than roughly 0% of products in the reference database. Bangor et al. would classify it as “marginal”.
+────────────────────────────────────────────────────────────────
+RESPONSES
+Q1. I think that I would like to use this system frequently.
+     4
+Q2. I found the system unnecessarily complex.
+     5  (reverse scored)
+Q3. I thought the system was easy to use.
+     1
+Q4. I think that I would need the support of a technical person to be able to use this system.
+     2  (reverse scored)
+Q5. I found the various functions in this system were well integrated.
+     3
+Q6. I thought there was too much inconsistency in this system.
+     4  (reverse scored)
+Q7. I would imagine that most people would learn to use this system very quickly.
+     5
+Q8. I found the system very cumbersome to use.
+     1  (reverse scored)
+Q9. I felt very confident using the system.
+     2
+Q10. I needed to learn a lot of things before I could get going with this system.
+     3  (reverse scored)
+────────────────────────────────────────────────────────────────
+REFERENCES
+- Brooke, J. (1996). SUS: A "quick and dirty" usability scale. In P. W. Jordan, B. Thomas, B. A. Weerdmeester & I. L. McClelland (Eds.), Usability Evaluation in Industry (pp. 189–194). Taylor & Francis.
+- Sauro, J., & Lewis, J. R. (2016). Quantifying the User Experience: Practical Statistics for User Research (2nd ed.). Morgan Kaufmann.
+- Bangor, A., Kortum, P. T., & Miller, J. T. (2008). An empirical evaluation of the System Usability Scale. International Journal of Human–Computer Interaction, 24(6), 574–594. https://doi.org/10.1080/10447310802205776
+
+Generated at uxscalelabs.online
