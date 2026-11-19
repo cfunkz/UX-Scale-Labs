@@ -27,6 +27,9 @@ function initMenu() {
 }
 
 function initHome() {
+  const preview = $('[data-preview]');
+  if (preview) import('./hero-preview.js').then(m => m.initPreview(preview));
+
   // Links from the old single-page version: /?q=sus and /#/sus
   const legacy = new URLSearchParams(location.search).get('q') || (location.hash.startsWith('#/') ? location.hash.slice(2) : '');
   if (legacy && $(`.scale-row[href="/${CSS.escape(legacy.toLowerCase())}/"]`)) {

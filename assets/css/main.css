@@ -184,8 +184,31 @@ button { font: inherit; color: inherit; }
 .preview-score { font: 700 3.25rem/1 var(--display); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
 .preview-score small { font: 500 1rem var(--font); color: var(--ink-3); letter-spacing: 0; margin-left: 6px; }
 .preview-bar { position: relative; height: 8px; border-radius: 99px; background: var(--bg-sunk); }
-.preview-bar i { position: absolute; inset: 0 auto 0 0; width: var(--w); border-radius: 99px; background: var(--accent); }
-.preview-bar b { position: absolute; left: var(--x); top: -4px; bottom: -4px; width: 2px; background: var(--ink); }
+.preview-bar i { position: absolute; inset: 0 auto 0 0; width: var(--w); border-radius: 99px; background: var(--tone, var(--accent)); transition: width 0.25s ease, background-color 0.25s ease; }
+.preview-bar b { position: absolute; left: var(--x); top: -4px; bottom: -4px; width: 2px; background: var(--ink); transition: left 0.25s ease; }
+.preview-head { flex-wrap: wrap; gap: var(--s2); }
+.preview-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.preview-tabs .abbr { border: 1px solid transparent; color: var(--ink-3); background: transparent; cursor: pointer; }
+.preview-tabs .abbr:hover { color: var(--ink); background: var(--bg-sunk); }
+.preview-tabs .abbr[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 30%, transparent); }
+.preview-card.is-dragging .preview-bar i { transition: background-color 0.25s ease; }
+/* The range input sits over the bar. It is wider than the bar by the thumb's width so the
+   thumb's centre lines up with the end of the fill at every value, including 0 and 100. */
+.preview-bar input[type="range"] { position: absolute; left: -10px; top: -12px; width: calc(100% + 20px); height: 32px; margin: 0; touch-action: pan-y; }
+.preview-bar input[type="range"]:focus { box-shadow: none; }
+.preview-card:not([data-ready]) .preview-bar input { display: none; }
+.preview-bar input[type="range"]::-webkit-slider-runnable-track { height: 32px; background: none; }
+.preview-bar input[type="range"]::-moz-range-track, .preview-bar input[type="range"]::-moz-range-progress { background: none; }
+.preview-bar input[type="range"]::-webkit-slider-thumb { width: 20px; height: 20px; margin-top: 6px; border: 3px solid var(--ink); }
+.preview-bar input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border: 3px solid var(--ink); }
+.preview-bar input:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--accent); outline-offset: 2px; }
+.preview-bar input:focus-visible::-moz-range-thumb { outline: 2px solid var(--accent); outline-offset: 2px; }
+.preview-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--s2); margin: 0; font-size: 0.8125rem; color: var(--ink-3); }
+.preview-foot a { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; text-decoration: none; }
+.preview-foot a:hover { text-decoration: underline; }
+.preview-foot svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.preview-card:not([data-ready]) .preview-foot > span { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .preview-bar i, .preview-bar b { transition: none; } }
 .preview-legend { display: flex; justify-content: space-between; font: 500 0.75rem var(--mono); color: var(--ink-3); }
 .preview-rows { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s3); }
 .preview-rows div, .fact { display: grid; gap: 2px; align-content: start; min-width: 0; padding: var(--s3); border-radius: var(--radius-sm); background: var(--bg-sunk); }

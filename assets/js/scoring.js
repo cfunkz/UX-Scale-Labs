@@ -25,7 +25,7 @@ function susBand(score, prefix = '') {
   return { label: `${prefix}Grade ${grade}`, tone: toneForGrade(grade) };
 }
 
-function acceptability(score) {
+export function acceptability(score) {
   return score > 70 ? 'Acceptable' : score >= 50 ? 'Marginal' : 'Not acceptable';
 }
 

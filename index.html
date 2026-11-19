@@ -80,16 +80,25 @@
           <a class="btn btn-ghost" href="#analyse">Analyse</a>
         </div>
       </div>
-      <div class="preview-card" aria-hidden="true">
-        <div class="preview-head"><span class="abbr">SUS</span><span class="pill tone-great">Grade A</span></div>
-        <div class="preview-score">82.5<small>of 100</small></div>
-        <div class="preview-bar"><i style="--w:82.5%"></i><b style="--x:68%"></b></div>
-        <div class="preview-legend"><span>0</span><span>average 68</span><span>100</span></div>
-        <div class="preview-rows">
+      <div class="preview-card" data-preview role="group" aria-label="Try a sample result">
+        <div class="preview-head">
+          <div class="preview-tabs" role="group" aria-label="Sample questionnaire">
+            <button type="button" class="abbr" data-preview-scale="sus" aria-pressed="true">SUS</button>
+            <button type="button" class="abbr" data-preview-scale="ueq" aria-pressed="false">UEQ</button>
+            <button type="button" class="abbr" data-preview-scale="tlx" aria-pressed="false">TLX</button>
+            <button type="button" class="abbr" data-preview-scale="seq" aria-pressed="false">SEQ</button>
+          </div>
+          <span class="pill tone-great" data-preview-band>Grade A</span>
+        </div>
+        <div class="preview-score"><span data-preview-value>82.5</span><small data-preview-unit>of 100</small></div>
+        <div class="preview-bar"><i style="--w:82.5%;--tone:var(--great)"></i><b style="--x:68%"></b><input type="range" min="0" max="100" step="2.5" value="82.5" aria-label="Sample SUS score" aria-valuetext="82.5 of 100, Grade A" data-preview-input></div>
+        <div class="preview-legend"><span data-preview-min>0</span><span data-preview-ref>average 68</span><span data-preview-max>100</span></div>
+        <div class="preview-rows" data-preview-facts>
           <div><span>Percentile</span><strong>90–95</strong></div>
           <div><span>Acceptability</span><strong>Acceptable</strong></div>
           <div><span>vs. average</span><strong>+14.5</strong></div>
         </div>
+        <p class="preview-foot"><span>Drag the bar to try another score.</span><a href="/sus/" data-preview-link>Take the SUS <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
     <div class="wrap">
