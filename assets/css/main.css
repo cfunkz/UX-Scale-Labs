@@ -247,6 +247,10 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--a
   .scale-row { grid-template-columns: minmax(0, 1fr) 20px; gap: var(--s2) var(--s3); padding: var(--s4); }
   .scale-row > .abbr, .scale-row-main, .scale-row-meta { grid-column: 1; }
   .scale-row-go { grid-column: 2; grid-row: 1; }
+  /* Pin the status badge to the abbreviation line, next to the arrow, so it sits in the
+     same spot on every card instead of trailing a title that wraps to one or more lines. */
+  .scale-row { position: relative; }
+  .scale-row h3 .status { position: absolute; top: var(--s4); right: calc(var(--s4) + 20px + var(--s3)); }
 }
 
 /* Which one */
