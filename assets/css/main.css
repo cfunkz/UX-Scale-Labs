@@ -227,7 +227,8 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--a
   .filter-bar { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
 }
 .category-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px var(--s3); margin: var(--s6) 0 var(--s3); }
-.category-head h2 { font: 600 1rem/1.35 var(--font); letter-spacing: 0; }
+.category-head h2, .category-head h3 { font: 600 1rem/1.35 var(--font); letter-spacing: 0; }
+.calc-links { margin-top: 0; }
 .category-head p { color: var(--ink-3); font-size: 0.875rem; }
 .scale-list { background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .scale-row { display: grid; grid-template-columns: 96px minmax(0, 1fr) 200px 20px; gap: var(--s4); align-items: center; padding: var(--s4) var(--s5); color: inherit; text-decoration: none; border-top: 1px solid var(--line); transition: background 0.15s; }
