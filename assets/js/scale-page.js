@@ -30,11 +30,14 @@ function initTabs() {
       next.focus();
     });
   });
-  const fromHash = () => {
+  const fromHash = scroll => {
     const name = location.hash.slice(1);
-    if (tabs.some(t => t.dataset.tab === name)) show(name, false);
+    if (!tabs.some(t => t.dataset.tab === name)) return;
+    show(name, false);
+    // Links further down the page (e.g. the guide's "Method tab" link) jump back up to the tabs.
+    if (scroll === true) $('.tabs')?.scrollIntoView({ block: 'start' });
   };
-  addEventListener('hashchange', fromHash);
+  addEventListener('hashchange', () => fromHash(true));
   fromHash();
 }
 

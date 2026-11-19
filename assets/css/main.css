@@ -712,3 +712,17 @@ details.issues.toggle ul { margin-top: 0; }
 .tool-row { grid-template-columns: 48px minmax(0, 1fr) 200px 20px; }
 .tool-row > .abbr { justify-self: stretch; justify-content: center; }
 @media (max-width: 760px) { .tool-row { grid-template-columns: minmax(0, 1fr) 20px; } .tool-row > .abbr { justify-self: start; min-width: 40px; } }
+
+/* Long-form guide under each calculator, and the About / Contact / Terms pages. */
+.guide { margin-top: var(--s8); padding-top: var(--s7); border-top: 1px solid var(--line); }
+.guide > h2 { font-size: clamp(1.375rem, 2.4vw, 1.75rem); }
+.guide h3 { margin: var(--s6) 0 var(--s3); font-size: 1.125rem; }
+.guide p, .guide li { color: var(--ink-2); line-height: 1.7; }
+.guide p + p { margin-top: var(--s3); }
+.guide .table-wrap { margin-top: var(--s4); }
+.guide td:first-child { white-space: nowrap; font-weight: 600; color: var(--ink); }
+.guide .report { margin-top: var(--s3); padding: var(--s3) var(--s4); border-left: 3px solid var(--accent); background: var(--bg-sunk); color: var(--ink); font-style: italic; }
+.byline { margin-top: var(--s3); font-size: 0.875rem; color: var(--ink-3); }
+.byline a { color: inherit; }
+.legal ul, .legal ol { margin-top: var(--s3); padding-left: 1.25em; display: grid; gap: var(--s2); color: var(--ink-2); }
+.guide ol + p, .guide ul + p, .guide .table-wrap + h3 { margin-top: var(--s4); }
